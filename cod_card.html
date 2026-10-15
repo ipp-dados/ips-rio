@@ -1,0 +1,165 @@
+
+<style>
+.estudo-card {
+  --azul: #07568A;
+  --marinho: #123D60;
+  --texto: #526B7E;
+  --borda: #D5E1E9;
+  display: flex;
+  flex-direction: column;
+  min-height: 285px;
+  box-sizing: border-box;
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px solid var(--borda);
+  border-radius: 18px;
+  color: var(--marinho);
+  font-family: inherit;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(18, 61, 96, 0.04);
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease,
+              transform 0.2s ease;
+}
+
+.estudo-card:hover {
+  border-color: #8ABBD4;
+  box-shadow: 0 6px 18px rgba(18, 61, 96, 0.10);
+  transform: translateY(-2px);
+}
+
+.estudo-card:focus-visible {
+  outline: 3px solid #57BCD6;
+  outline-offset: 3px;
+}
+
+.estudo-topo {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+
+.estudo-icone {
+  display: flex;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  color: var(--azul);
+  background: #E8F2F7;
+  border-radius: 13px;
+}
+
+.estudo-icone svg {
+  width: 25px;
+  height: 25px;
+}
+
+.estudo-categoria {
+  color: var(--azul);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.estudo-titulo {
+  margin: 0 0 12px;
+  color: var(--marinho);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.estudo-descricao {
+  margin: 0 0 24px;
+  color: var(--texto);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.estudo-rodape {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--borda);
+  color: var(--azul);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.estudo-download {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.estudo-seta {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .estudo-card {
+    min-height: 250px;
+    padding: 20px;
+  }
+}
+</style>
+
+<a class="estudo-card"
+   href="https://SEU-LINK-DO-MATERIAL.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Acessar publicação: Nota Técnica — Metodologia do índice">
+
+  <div class="estudo-topo">
+    <div class="estudo-icone">
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="1.7"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <path d="M7 3.5h7l4 4V21H7z"/>
+        <path d="M14 3.5v4h4"/>
+        <path d="M10 12h5M10 15.5h5M10 19h3"/>
+      </svg>
+    </div>
+    <span class="estudo-categoria">Nota técnica</span>
+  </div>
+
+  <h3 class="estudo-titulo">
+    Metodologia do Índice de Desenvolvimento Social
+  </h3>
+
+  <p class="estudo-descricao">
+    Conheça os critérios metodológicos, os indicadores
+    e as fontes de dados utilizados na construção do índice.
+  </p>
+
+  <div class="estudo-rodape">
+    <svg class="estudo-download" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor"
+         stroke-width="1.8" stroke-linecap="round"
+         stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 3v12m-5-5 5 5 5-5"/>
+      <path d="M5 16v4h14v-4"/>
+    </svg>
+
+    <span>Baixar material</span>
+
+    <svg class="estudo-seta" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor"
+         stroke-width="1.8" stroke-linecap="round"
+         stroke-linejoin="round" aria-hidden="true">
+      <path d="M5 12h14m-6-6 6 6-6 6"/>
+    </svg>
+  </div>
+</a>
